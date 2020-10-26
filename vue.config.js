@@ -1,5 +1,5 @@
 const path = require('path')
-
+const minicss=require("mini-css-extract-plugin")
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
