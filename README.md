@@ -1,29 +1,12 @@
-# vue-typecript-practice
+## 个人从零搭建博客
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#### 前端
 
-### Run your unit tests
-```
-npm run test:unit
-```
+​	前端主要使用 typescript， vue ， element-ui
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+待完善......
+

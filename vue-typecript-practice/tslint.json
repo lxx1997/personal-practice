@@ -26,7 +26,6 @@
       "typeLiterals": "ignore"
     }
   }],
-
   // 禁止给类的构造函数的参数添加修饰符
   "no-parameter-properties": false,
   // 禁止使用 debugger
@@ -126,11 +125,8 @@
   "radix": true,
   // 必须使用 isNaN(foo) 而不是 foo === NaN
   "use-isnan": true,
-  //
-  //
   // 可维护性
   // 这些规则可以增加代码的可维护性
-  //
   // 禁止函数的循环复杂度超过 20，https://en.wikipedia.org/wiki/Cyclomatic_complexity
   "cyclomatic-complexity": [
     true,

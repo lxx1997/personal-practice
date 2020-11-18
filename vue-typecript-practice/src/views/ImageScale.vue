@@ -46,8 +46,8 @@
       this.scaleImgBox.addEventListener('mousemove', this.mouseMove)
       this.scaleImgBox.addEventListener('mouseup', this.mouseUp)
     }
-    private mouseMove() {
-      console.log('mousemove')
+    private mouseMove(e: MouseEvent) {
+      console.log('mousemove', )
     }
     private mouseUp() {
       console.log('mouseup')

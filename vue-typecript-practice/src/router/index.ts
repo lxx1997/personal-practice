@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import Home from '../views/Home.vue';
+import Home from '@/views/Home.vue';
+import HeaderBar from '@/layout/mian/index.vue';
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,18 @@ const routes: RouteConfig[] = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '@/views/ImageScale.vue'),
   },
+  {
+    path: '/blog',
+    name: 'HeaderBar',
+    component: HeaderBar,
+    children: [
+      {
+        path: 'index',
+        name: 'HomePage',
+        component: () => import('@/views/main/home-page/index.vue')
+      }
+    ]
+  }
 ];
 
 const router = new VueRouter({
