@@ -1,0 +1,9 @@
+// 登录页面图片旋转
+@keyframes avatarRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

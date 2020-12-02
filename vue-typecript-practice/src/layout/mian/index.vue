@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="layout">
     <el-header>
       <header-bar></header-bar>
     </el-header>
@@ -10,8 +10,7 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { Component, Watch } from 'vue-property-decorator'
+import { Component, Vue, Watch } from 'vue-property-decorator'
 import HeaderBar from './Components/headerBar.vue'
 
 @Component({
@@ -19,11 +18,26 @@ import HeaderBar from './Components/headerBar.vue'
     HeaderBar
   }
 })
-export default class extends Vue {
+export default class headerBarIndex extends Vue {
 
 }
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+.el-header {
+  border-bottom: 1px dotted #a320a3
+}
+.layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .el-header {
+    width: 100%;
+  }
+  .el-container {
+    flex: 1;
+    width: 100%;
+  }
+}
 </style>
