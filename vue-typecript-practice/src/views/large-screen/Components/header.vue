@@ -2,7 +2,7 @@
   <div class="l-s-n">
     <div class="l-s-n-r">
       <div class="l-s-n-title">
-        <span class="l-s-n-t no-wrap">智慧工程大屏展示</span>
+        <span class="l-s-n-t no-wrap">大屏展示</span>
         <el-select class="l-s-n-s" size='small' v-model="projectId" placeholder="" clearable filterable @change="handleChangeProject">
           <el-option v-for="item in projectList" :key="item.id" :value="item.id" :label="item.name"></el-option>
         </el-select>

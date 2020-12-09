@@ -45,7 +45,7 @@ export default class extends Vue {
   &-container {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 20px;
     padding-left: 30px;
@@ -53,7 +53,6 @@ export default class extends Vue {
     .field-personnel-box {
       margin-top: 20px;
       width: 27%;
-      margin-right: 2%;
     }
     .user-base-box {
       margin-top: 20px;
@@ -62,7 +61,6 @@ export default class extends Vue {
     .work-team-box {
       margin-top: 20px;
       width: 27%;
-      margin-left: 2%;
     }
   }
 }

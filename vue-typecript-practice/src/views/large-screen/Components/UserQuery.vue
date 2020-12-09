@@ -1,20 +1,7 @@
 <template>
   <card-title>
-    <div slot="title">人员库</div>
+    <div slot="title">查询</div>
     <div class="user-base">
-      <div class="user-base-number">
-        <personal-number class="user-base-number-left" icon-class="yuanzhu" class-name="yuanzhu">
-          <span slot="title">人数439</span>
-        </personal-number>
-        <div class="user-base-number-right">
-          <p v-for="(item, index) in unitList" :key="index">{{item.label + '  '}} <span>{{item.value}}</span> 个</p>
-        </div>
-      </div>
-      <ve-histogram 
-        :data="chartData"
-        :settings="chartSettings" 
-        :extend="entends"
-      />
     </div>
   </card-title>
 </template>
@@ -33,27 +20,27 @@ import PersonalNumber from './PersonalNumber.vue'
 export default class extends Vue {
   private unitList = [
     {
-      label: '65434565',
+      label: '1323123',
       value: 20
     },
     {
-      label: '65434565',
+      label: '1323123',
       value: 20
     },
     {
-      label: '65434565',
+      label: '1323123',
       value: 20
     },
     {
-      label: '65434565',
+      label: '1323123',
       value: 20
     },
     {
-      label: '65434565',
+      label: '1323123',
       value: 20
     },
     {
-      label: '65434565',
+      label: '1323123',
       value: 20
     }
   ]
