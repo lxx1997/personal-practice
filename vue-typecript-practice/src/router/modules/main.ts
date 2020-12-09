@@ -22,6 +22,11 @@ export default [
             path: '2048',
             name: '2048',
             component: () => import('@/views/main/practice/pages/2048.vue'),
+          },
+          {
+            path: 'greedy-snake',
+            name: 'GreedySnake',
+            component: () => import('@/views/main/practice/pages/greedySnake.vue'),
           }
         ]
       },
@@ -41,7 +46,15 @@ export default [
       {
         path: 'other',
         name: 'HomeOther',
-        component: () => import('@/views/main/other/index.vue')
+        component: () => import('@/views/main/other/index.vue'),
+        redirect: '/blog/other/echarts',
+        children: [
+          {
+            path: 'echarts',
+            name: 'Echarts',
+            component: () => import('@/views/main/other/index.vue'),
+          }
+        ]
       },
       {
         path: 'profile',

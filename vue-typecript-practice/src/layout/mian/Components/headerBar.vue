@@ -65,6 +65,11 @@ export default class extends Vue{
 </script>
 
 <style lang="scss" scoped>
+  .router-link-exact-active {
+    background-color: #cfd4e6;
+    color: #ffffff;
+    border-radius: 5px;
+  }
   .blog-header {
     width: 100%;
     height: 100%;

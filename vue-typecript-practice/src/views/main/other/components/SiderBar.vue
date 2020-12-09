@@ -5,13 +5,9 @@
     style="width:200px"
     :router="true"
     >
-    <el-menu-item index="/blog/practice/2048">
+    <el-menu-item index="/blog/other/echarts">
       <i class="el-icon-menu"></i>
-      <span slot="title">2048</span>
-    </el-menu-item>
-    <el-menu-item index="/blog/practice/greedy-snake">
-      <i class="el-icon-menu"></i>
-      <span slot="title">贪吃蛇</span>
+      <span slot="title">echarts</span>
     </el-menu-item>
   </el-menu>
 </template>

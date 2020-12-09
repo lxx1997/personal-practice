@@ -12,12 +12,18 @@ ul,li,ol {
   list-style: none;
 }
 
-.router-link-exact-active {
-  background-color: #cfd4e6;
-  color: #ffffff;
-  border-radius: 5px;
-}
 
 body, html {
   height: 100%;
+}
+
+.clear-both {
+  clear: both;
+}
+// no wrap
+.no-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
 }

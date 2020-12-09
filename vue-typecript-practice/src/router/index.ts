@@ -17,6 +17,11 @@ const routes: RouteConfig[] = [
     component: () => import('@/views/login/index.vue')
   },
   {
+    path: '/large-screen',
+    name: 'LargeScreen',
+    component: () => import('@/views/large-screen/index.vue')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
